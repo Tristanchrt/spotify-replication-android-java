@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+
+        <variable
+            name="sortedListViewModel"
+            type="com.example.oasis.viewmodels.SortedListViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/audioFileViewModel.title_audioFileViewModel.album"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#222222"
+        android:padding="8dp"
+        android:radius="8dp">
+
+        <TextView
+            android:id="@+id/title_sorted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{sortedListViewModel.title}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

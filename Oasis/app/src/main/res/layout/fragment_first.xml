@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:id="@+id/naviguation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#404040"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/sorted_album"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxWidth="48dp"
+                android:maxHeight="48dp"
+                android:scaleType="fitCenter"
+
+                android:src="@drawable/album" />
+
+            <ImageView
+                android:id="@+id/sorted_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxWidth="48dp"
+                android:maxHeight="48dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/user" />
+
+            <ImageView
+                android:id="@+id/sorted_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxWidth="48dp"
+                android:maxHeight="48dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/genre" />
+
+
+            <ImageView
+                android:id="@+id/sorted_similar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxWidth="48dp"
+                android:maxHeight="48dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/light" />
+
+        </LinearLayout>
+
+</layout>
